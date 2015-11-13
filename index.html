@@ -4,36 +4,86 @@
     <title>Title</title>
     <meta charset="utf-8">
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Bitter:700);
+      @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,400italic);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Droid Serif'; }
+      body { font-family: 'Raleway'; }
       h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
+        font-family: 'Bitter';
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      .inverse {
+        background: #272822;
+        color: #d6d6d6;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+      }
+
+      .video-background {
+        background-size: 100% 100%;
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+      }
+
+      .footnote {
+        font-size: 80%;
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+      }
     </style>
   </head>
   <body>
     <textarea id="source">
 
-class: center, middle
 
+class: center, middle
+background-image:  url(bialetti.jpg)
+
+---
+
+class: center, middle, inverse
+background-image: url(marzocco.jpg)
+
+.footnote[hubbub coffee]
+---
+
+class: center, middle
+background-image: url(tea.jpg)
+
+---
+
+class: center, middle, inverse
+
+background-image: url(framework.jpg)
 # To Framework or not to Framework
 
+.footnote[Timber Frame by Paul VanderWerf]
 ---
 
-# That's a question
-
----
-
-# Fritz
+# That's the question
 
 ---
 
-# Tom
+class: video-background
+background-image: url(lmg-small.gif)
+# Fritz (hates frameworks)
+
+* Works at Nelen &amp; Schuurmans and works on numerous other tidbits
+* Node/Python/Haxe and proudly (read: sadly) AngularJS
+* Frontman of Cheeses of Mexico
+
+---
+
+# Tom (loves frameworks)
 
 * Works at Brightin
 * Occasional Ember fanboy
@@ -41,23 +91,28 @@ class: center, middle
 
 ---
 
-# Coffeemaker
+background-image: url(bieber.jpg)
+
+---
+class: video-background
+background-image: url(destruct.gif)
 
 ---
 
-# Who uses a framework?
+class: inverse
+background-image: url(catch-22.jpg)
+
+# The "Catch" with Frameworks
+
+* Solves a specific problem
+* Certain belief system (e.g. opinionated vs agnostic)
 
 ---
+
 
 class: center, middle
 
 # A story about testing React
-
----
-
-class: center, middle
-
-# What is a framework?
 
 ---
 
@@ -96,7 +151,7 @@ class: center, middle
 
 # Moving complexity to the front
 
-http://puu.sh/l4yaQ.png
+![complexity](http://puu.sh/l4yaQ.png)
 
 ---
 
@@ -106,7 +161,7 @@ http://puu.sh/l4yaQ.png
 * Don't bring your own toolbox, borrow it
 
     </textarea>
-    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    <script src="remark.min.js">
     </script>
     <script>
       var slideshow = remark.create();
